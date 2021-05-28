@@ -5,7 +5,7 @@ import router from "../router";
 
 Vue.use(Vuex)
 
-const API_URL = 'http://localhost:3000/';
+const API_URL = 'https://learn-panel-api.herokuapp.com/';
 
 axios.defaults.withCredentials = true
 
