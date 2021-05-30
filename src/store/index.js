@@ -152,6 +152,7 @@ export const store = new Vuex.Store({
             commit("setErrorStatus", null)
             axios.post(API_URL + "login", payload)
             .then(data => {
+                console.log(333, data)
                 commit("setLoadingStatus", false)
                 commit("setUser", data.user)
             })
