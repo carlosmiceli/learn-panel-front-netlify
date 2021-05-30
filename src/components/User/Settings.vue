@@ -58,7 +58,7 @@ export default {
             }
 
             if (this.changePasswordForm.newPassword === this.changePasswordForm.repeatPassword) {
-                return axios.put('http://localhost:3000/change-pw', {
+                return axios.put('https://learn-panel-api.herokuapp.com/change-pw', {
                     oldPassword: this.changePasswordForm.oldPassword, 
                     newPassword: this.changePasswordForm.newPassword
                 })
