@@ -73,7 +73,6 @@ export const store = new Vuex.Store({
             }
             return axios.post(API_URL + "content/scrape", url)
             .then(res => {
-                console.log("res", res)
                 const content = {
                     title: payload.title,
                     url: payload.url,
@@ -152,7 +151,6 @@ export const store = new Vuex.Store({
             commit("setErrorStatus", null)
             axios.post(API_URL + "login", payload)
             .then(data => {
-                console.log(333, data)
                 commit("setLoadingStatus", false)
                 commit("setUser", data.user)
             })

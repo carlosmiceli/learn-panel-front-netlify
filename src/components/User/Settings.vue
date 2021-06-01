@@ -63,7 +63,6 @@ export default {
                     newPassword: this.changePasswordForm.newPassword
                 })
                 .then(res => {
-                    console.log(res)
                     alert(res.data)
                     this.$router.push("/")
                 })
